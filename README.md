@@ -1,4 +1,4 @@
-# Shelfie - Multi-Modal Product Catalog Digitization Platform
+# (SKUA)Shelfie - Multi-Modal Product Catalog Digitization Platform
 
 Shelfie helps sellers digitize large product catalogs seamlessly using text, voice, and image inputs, supporting 10+ Indic languages through India's Bhashini model and Data Vatika integration.
 
