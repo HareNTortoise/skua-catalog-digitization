@@ -1,0 +1,26 @@
+# Web Framework & Server
+fastapi[standard]
+uvicorn
+python-multipart
+python-dotenv
+
+# AWS Integration
+
+brevo-python
+
+# Database & ORM (SQLAlchemy ORM)
+sqlalchemy
+alembic
+
+# Database Drivers
+# Optional: only needed when using a PostgreSQL DATABASE_URL.
+psycopg2-binary
+
+# AI & Data Validation
+pydantic
+langchain
+langchain-aws
+
+# Computer Vision (Worker Node Only)
+opencv-python-headless
+pyzbar

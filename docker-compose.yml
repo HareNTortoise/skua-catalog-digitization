@@ -1,0 +1,28 @@
+services:
+  api:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+      network: host
+    env_file:
+      - ./server/.env
+
+    volumes:
+      - ./server/certs:/certs:ro
+
+    ports:
+      - "8000:8000"
+
+  worker:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+      network: host
+    env_file:
+      - ./server/.env
+
+    volumes:
+      - ./server/certs:/certs:ro
+
+    command: [ "python", "-m", "worker" ]
+    restart: unless-stopped
